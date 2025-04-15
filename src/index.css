@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+input:-webkit-autofill {
+  background-color: #1e293b !important; 
+  /* color: #ffffff !important; Match your input's text color */
+  /* border: 1px solid #374151 !important; Match your input's border color */
+  /* -webkit-box-shadow: 0 0 0px 1000px #1e293b inset !important; Prevent browser's default autofill background */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent flashing */
+}
+
+input:-webkit-autofill::first-line {
+  color: #ffffff !important; /* Ensure text color matches */
+}
