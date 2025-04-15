@@ -5,6 +5,7 @@ import Input from "../components/Input";
 import { ExternalLink, Lock, LogIn, Mail, ScanFace, Eye, EyeClosed, CircleUserRound, User } from "lucide-react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import PasswordStrengthMeter from "../components/PasswordStrength";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -119,9 +120,10 @@ const Register = () => {
                     <Eye className="text-cyan-400" />
                   )}
                 </div>
+                <PasswordStrengthMeter password={password} />
               </div>
               <button
-                className="w-full bg-cyan-500 text-white py-2 rounded-lg hover:bg-cyan-600 transition duration-200 flex items-center justify-center gap-2"
+                className=" mt-2 w-full bg-cyan-500 text-white py-2 rounded-lg hover:bg-cyan-600 transition duration-200 flex items-center justify-center gap-2"
                 onClick={handleLogin}
               >
                 <span className="font-bold">Register</span>
