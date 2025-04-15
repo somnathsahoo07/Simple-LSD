@@ -1,6 +1,6 @@
-# My-Pro PWA
+# Auth-Tailwind PWA
 
-My-Pro is a Progressive Web Application (PWA) built with React, TailwindCSS, and Vite. It features a modern design and includes functionalities like user authentication, password strength meter, and interactive UI components.
+Auth-Tailwind is a Progressive Web Application (PWA) built with React, TailwindCSS, and Vite. It features a modern design and includes functionalities like user authentication, password strength meter, and interactive UI components.
 
 ## Features
 
