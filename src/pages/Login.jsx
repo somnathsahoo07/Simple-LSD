@@ -131,7 +131,7 @@ const Login = () => {
               >
                 <span>
                   {" "}
-                  Sign Up <ExternalLink className="inline-block size-4" />
+                  Register <ExternalLink className="inline-block size-4" />
                 </span>
               </Link>
             </p>

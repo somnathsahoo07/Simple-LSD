@@ -120,8 +120,8 @@ const Register = () => {
                     <Eye className="text-cyan-400" />
                   )}
                 </div>
-                <PasswordStrengthMeter password={password} />
               </div>
+                <PasswordStrengthMeter password={password} />
               <button
                 className=" mt-2 w-full bg-cyan-500 text-white py-2 rounded-lg hover:bg-cyan-600 transition duration-200 flex items-center justify-center gap-2"
                 onClick={handleLogin}
