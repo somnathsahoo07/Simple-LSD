@@ -9,7 +9,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                {/* Add more routes here as needed */}
+                
             </Routes>
         </BrowserRouter>
     )
