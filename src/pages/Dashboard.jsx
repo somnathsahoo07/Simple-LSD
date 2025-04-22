@@ -52,12 +52,16 @@ const Dashboard = () => {
   };
 
   const menuItems = [
-    { icon: Home, label: "Home" },
-    { icon: LayoutDashboard, label: "Dashboard" },
-    { icon: MessageSquare, label: "Messages" },
-    { icon: User, label: "Profile" },
-    { icon: Settings, label: "Settings" },
+    { icon: Home, label: "Home", path: "/home" },
+    { icon: LayoutDashboard, label: "Dashboard", path: "/dashboard" },
+    { icon: MessageSquare, label: "Messages", path: "/messages" },
+    { icon: User, label: "Profile", path: "/profile" },
+    { icon: Settings, label: "Settings", path: "/settings" },
   ];
+
+  const handleMenuClick = (path) => {
+    navigate(path);
+  };
 
   return (
     <div className="flex min-h-screen bg-gradient-to-br from-blue-950 via-sky-900 to-cyan-800">
@@ -95,6 +99,7 @@ const Dashboard = () => {
             {menuItems.map((item, index) => (
               <button
                 key={index}
+                onClick={() => handleMenuClick(item.path)}
                 className="flex items-center w-full p-2 rounded-lg transition-all duration-200 group hover:bg-cyan-500/10"
               >
                 <div className={`flex items-center ${!isExpanded ? "justify-center w-full" : ""}`}>
